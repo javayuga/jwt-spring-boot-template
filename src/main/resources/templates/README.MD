@@ -1,0 +1,1 @@
+Spring Boot templates should be placed here

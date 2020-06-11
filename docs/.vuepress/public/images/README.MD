@@ -1,0 +1,1 @@
+Vuepress static images should be placed here

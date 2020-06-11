@@ -1,0 +1,16 @@
+{
+  "name": "jwt-spring-boot-template",
+  "version": "1.0.0",
+  "description": "template for Spring Boot REST JWT auth",
+  "main": "",
+  "repository": "https://github.com/javayuga/jwt-spring-boot-template.git",
+  "author": "Marco Antonio Almeida Silva <marcosilva.poa.br@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.1"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}

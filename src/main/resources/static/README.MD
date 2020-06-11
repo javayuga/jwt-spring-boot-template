@@ -1,0 +1,1 @@
+Spring Boot static resources should be placed here

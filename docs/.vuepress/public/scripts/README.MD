@@ -1,0 +1,1 @@
+Vuepress standalone scripts referenced in documentation (e.g. SQL scripts) should be placed here
