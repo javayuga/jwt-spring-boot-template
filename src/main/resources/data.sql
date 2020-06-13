@@ -1,6 +1,8 @@
 INSERT INTO roles (name)
 VALUES ('ROLE_USER'),('ROLE_MODERATOR'),('ROLE_ADMIN');
 
+
+
 /*
 INSERT INTO roles (name)
 SELECT 'ROLE_USER' FROM DUAL
