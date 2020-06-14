@@ -104,6 +104,38 @@ Help for Vuepress configuration options [can be found here](https://vuepress.vue
 
 Markdown extensions are [described here](https://vuepress.vuejs.org/guide/markdown.htm).
 
+## Testing with RESTer
+
+Using [RESTer Chrome plugin](https://chrome.google.com/webstore/detail/rester/eejfoncpjfgmeleakejdcanedmefagga?hl=en) for testing the API.
+
+Don't forget to set the Content-type to **application-json** on header
+
+![RESTer content-type on header](/images/RESTerJWT_01.png)
+
+### signup
+
+url | method
+:----|:----:
+http://localhost:8082/api/auth/signup  | POST
+
+payload
+```json
+{
+    "username":"mod",
+    "email":"mod@marcosilva.poa.br",
+    "password":"123456789",
+    "role":["mod","user"]
+}
+```
+![RESTer signup ok](/images/RESTerJWT_02.png)
+
+Using Spring Boot's **create-drop** strategy for data initialization, the signup method can be called once for each server session (restart of the project).
+
+After the first call, the method will fail for the same username or email on the payload.
+
+![RESTer signup error](/images/RESTerJWT_03.png)
+
+
 
 
 
