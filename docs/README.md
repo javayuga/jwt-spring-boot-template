@@ -110,7 +110,7 @@ Using [RESTer Chrome plugin](https://chrome.google.com/webstore/detail/rester/ee
 
 Don't forget to set the Content-type to **application-json** on header
 
-![RESTer content-type on header](/images/RESTerJWT_01.png)
+<img :src="$withBase('/images/RESTerJWT_01.png')" alt="RESTer content-type on header">
 
 ### signup
 
@@ -127,13 +127,14 @@ payload
     "role":["mod","user"]
 }
 ```
-![RESTer signup ok](/images/RESTerJWT_02.png)
+<img :src="$withBase('/images/RESTerJWT_02.png')" alt="RESTer signup ok">
 
 Using Spring Boot's **create-drop** strategy for data initialization, the signup method can be called once for each server session (restart of the project).
 
 After the first call, the method will fail for the same username or email on the payload.
 
-![RESTer signup error](/images/RESTerJWT_03.png)
+<img :src="$withBase('/images/RESTerJWT_03.png')" alt="RESTer signup error">
+
 
 
 
