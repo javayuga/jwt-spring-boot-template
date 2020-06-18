@@ -2,7 +2,7 @@
 
 ## Goals
 
-A project to demonstrate:
+The goals of this project are to demonstrate:
  
 - JWT authorization with Spring Boot REST API
 - Externalized mySQL deployment via docker
@@ -15,7 +15,7 @@ Original Github repository [available here](https://github.com/bezkoder/spring-b
 
 ## Ports
 
-Services are listening on ports
+When running on localhost, these are the listening ports for services
 
 | service | url:port | obs
 | ---:|:---:|:---
@@ -37,9 +37,9 @@ In-depth information on Spring Security [can be found here](https://docs.spring.
 
 ## Dockerized deployment
 
-In Spring Boot, the most common initial approach is to use H2 (in-memory or disk-based) persistence.  That's just fine for prototyping and very small-scale projects.
+The most common initial approach in Spring Boot is to use H2 (in-memory or disk-based) persistence for development.  That's just fine for prototyping and very small-scale projects.
   
-As an exercise, however, I decided to use mySQL as a dockerized service.
+As an exercise, I decided to use a dockerized mySQL ervice.
   
 With [Docker](https://docs.docker.com/docker-for-windows/) installed on your machine, there is little effort to run a docker-compose script.
 
@@ -70,7 +70,7 @@ services:
 
 ## Data initialization with Spring JPA
 
-The data model for this project is quite simple, but still there are a few caveats.
+The data model in this project is quite simple, but still there are a few points that need attention.
 
 Spring Boot data initialization runs **resources/data.sql**.  
 
@@ -91,9 +91,9 @@ spring.jpa.hibernate.ddl-auto= create-drop
 
 As indicated by the highlights, data and schema will be refreshed after each restart.
 
-This is good for an example, but might not be appropriate for most use cases.
+This is fine for an example, but might not be appropriate for most use cases.
 
-Though not used here, [Spring Boot's @Sql annotation ](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/test/context/jdbc/Sql.html) could come in handy while developing tests, [as described here](https://www.baeldung.com/spring-boot-data-sql-and-schema-sql).
+Though not used in the project, [Spring Boot's @Sql annotation ](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/test/context/jdbc/Sql.html) might come in handy while developing tests, [as described here](https://www.baeldung.com/spring-boot-data-sql-and-schema-sql).
 
 
 ## Vuepress
