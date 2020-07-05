@@ -10,7 +10,9 @@ services:
     depends_on:
       - "db"
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: tomcat.dockerfile
     image: jwt-spring-boot-template-img
     ports:
       - 8082:8080
